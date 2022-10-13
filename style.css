@@ -44,6 +44,7 @@ header nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
     padding-inline: 30px;
 }
@@ -104,6 +105,8 @@ ul {
 
 .inputEmail {
     display: flex;
+    justify-content: center;
+    width: 40vw;
 }
 
 .inputEmail input {
@@ -112,8 +115,7 @@ ul {
 
 .inputEmail input[type="email"] {
     padding-inline-start: 10px;
-    width: 50vh;
-    font-size: 15px;
+    width: 70%;
 }
 
 .inputEmail input[type="submit"] {
@@ -123,6 +125,7 @@ ul {
     font-size: 30px;
     padding-inline: 20px;
     cursor:pointer;
+    width: fit-content;
 }
 
 /* Footer */
@@ -402,6 +405,91 @@ a:link, a:active {
     .content img {
         width: 50vw;
     }
+
+    .faqContent {
+        width: 90vw;
+    }
+
+    .content h1 {
+        font-size: 4vh;
+        width: 80vw;
+        margin: 15px auto;
+    }
+
+    .content h2 {
+        width: 80vw;
+        margin: auto;
+        font-size: 2.5vh;
+    }
+
+    .inputEmail, .headerSection, .needHelp {
+        width: 90vw;
+    }
+
+    footer {
+        width: 90vw;
+    }
+
+    .faq h2 {
+        font-size: 5vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .faq h3 {
+        text-align: center;
+    }
+
+    .faqContent li h3::after {
+        display: none;
+    }
+    
+    .inputEmail input[type="submit"] {
+        font-size: 15px;
+        padding-inline: 5px;
+    }
+
+    header nav img {
+        width: 75%;
+    }
+
+    .downloadBar img {
+        width: 7vw !important;
+    }
+
+    .downloadBar {
+        font-size: 3vw;
+        bottom: 5vh;
+    }
+
+    .content img {
+        width: 80vw;
+    }
+
+    .footerList {
+        display: initial;
+    }
+
+    .faq h3 {
+        font-size: 5vw;
+    }
+
+    header nav button, .buttonsRight select {
+        font-size: 3vw;
+    }
+
+    .buttonsRight select {
+        margin-right: 5px;
+    }
+
+    header nav {
+        padding-inline: 0;
+    }
+
+    .headerSection h1 {
+        font-size: 5vh;
+    }
+
 }
 
 
