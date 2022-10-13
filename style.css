@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('./assets/font/fontello.eot?88247165');
+    src: url('./assets/font/fontello.eot?88247165#iefix') format('embedded-opentype'),
+         url('./assets/font/fontello.woff2?88247165') format('woff2'),
+         url('./assets/font/fontello.woff?88247165') format('woff'),
+         url('./assets/font/fontello.ttf?88247165') format('truetype'),
+         url('./assets/font/fontello.svg?88247165#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    background-color: #000000;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p, li {
+    color:#FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* header */
+
+header {
+    padding: 10px 20px;
+    margin-bottom: 150px;
+}
+
+.haveBackground {
+    background-image: linear-gradient(
+    rgba(5, 5, 5, 0.90),
+    rgba(0, 0, 0, 0.4),
+    rgba(5, 5, 5, 0.90)
+    ),
+    url(./assets/background.jpg);
+    background-size:cover;
+    background-position: 10%;
+
+    padding-bottom: 165px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    padding-inline: 30px;
+}
+
+header nav img {
+    width: 21%;
+}
+
+header nav button {
+    color:#FFFFFF;
+    background-color: #e50914;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 8px;
+    padding-inline: 20px;
+    border: none;
+}
+
+.headerSection {
+    font-size: 50px;
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerSection h1 {
+    margin: 0;
+}
+
+.headerSection h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.headerSection p {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+.buttonsRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsRight select {
+    margin-right: 30px;
+    padding-block: 8px;
+}
+
+.inputEmail {
+    display: flex;
+}
+
+.inputEmail input {
+    line-height: 60px;
+}
+
+.inputEmail input[type="email"] {
+    padding-inline-start: 10px;
+    width: 50vh;
+    font-size: 15px;
+}
+
+.inputEmail input[type="submit"] {
+    background-color: #e20712;
+    color: white;
+    border: 1px solid #45454562;
+    font-size: 30px;
+    padding-inline: 20px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer {
+    width: 40vw;
+    margin: auto;
+}
+
+footer, footer li, footer p, footer h4 {
+    color:#5f5f5f;
+    font-size: 18px;
+}
+
+.footerList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerList li {
+    margin-block: 15px;
+    font-size: 13px;
+
+}
+
+.footerList ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+footer h4 {
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    margin-top: 10%;
+}
+
+/* select style */
+select {
+    color:#ffffff;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+}
+
+footer select {
+    color:#5f5f5f;
+    border: 1px solid #5f5f5f;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin-bottom: 8px;
+}
+
+option {
+    background-color: #000000;
+}
+
+/* article style */
+
+article, .haveBackground, .faq{
+    border-bottom: solid 8px #222222;
+}
+
+.headerSection article {
+    border-bottom: none;
+}
+
+.content {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 75px;
+}
+
+aside {
+    width: 60vh;
+    margin-inline: 100px;
+}
+
+.content img {
+    width: 30vw;
+}
+
+.content h1, .faq h2 {
+    font-size: 2.6vw;
+    margin-bottom: 0;
+}
+
+.content h2 {
+    font-weight: 300;
+    font-size: 1.30vw;
+}
+
+.imgLeftSection .content {
+    flex-direction: row-reverse;
+}
+
+
+.videoIn {
+    position: relative;
+}
+
+.tv {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    right: 0;
+    height: auto;
+    z-index: 1;
+}
+
+.videoIn .video {
+    position: absolute;
+    top: 20.6%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 74%;
+}
+
+.videoIn .ST {
+    top: 7.6%;
+    width: 62%;
+}
+
+
+/* faq */
+
+.faqContent {
+    width: 50vw;
+    margin: auto;
+    border: none
+}
+
+.faqContent li {
+    background-color: #303030;
+    margin: 8px auto 0;
+    width: 80%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.faqContent details {
+    padding-block: 20px;
+}
+
+.faqContent details[open] {
+    padding-bottom: 0;
+}
+
+
+.faq ul {
+    margin-bottom: 6%;
+    padding-left: 0;
+}
+
+.faq h2 {
+    margin-top: 8%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+details > summary {
+    list-style: none;
+    position: relative;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+.faq h3 {
+    font-weight: 100;
+    font-size: 26px;
+    margin: auto 30px;
+}
+
+details div {
+    padding: 0px 20px 10px;
+}
+
+.faq svg {
+    fill:#FFFFFF;
+    width: 10%;
+}
+.needHelp p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.needHelp {
+    text-align: center;
+    width: 42vw;
+    margin: auto;
+}
+
+.faq form {
+    width: 87%;
+    margin: auto;
+    margin-bottom: 8%;
+}
+
+.faqContent li h3::after {
+    content: '\e801';
+    display: inline-block;
+    font-size: 20px;
+    font-family: "fontello";
+    position: absolute;
+    font-size: 20px;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:active {
+    color:white;
+}
+
+/* style de téléchargement */
+.telechargement {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -100px;
+}
+
+.downloadBar {
+    background: #000000;
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    border: 2px solid #404040;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    bottom: 125px;
+}
+
+.downloadBar p {
+    padding-inline:10px;
+    font-weight: bold;
+    letter-spacing:0.5px;
+}
+
+.downloadBar img {
+    width: 60px !important;
+}
+
+#downloadInProgress {
+    color: #005ec4;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1225px) {
+    aside {
+        width: 100vh;
+        margin: auto;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .content img {
+        width: 50vw;
+    }
+}
+
+
+/* Icones */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+  
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+  
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+  
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .icon-globe:before { content: '\e800'; } /* '' */
+  .icon-plus:before { content: '\e801'; } /* '' */
+  .icon-right-open:before { content: '\f006'; } /* '' */
